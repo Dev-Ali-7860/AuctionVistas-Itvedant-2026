@@ -38,7 +38,7 @@ const Home = () => {
             <form onSubmit={handleSubmit(formSubmit)}>
               <input type='text'
                 placeholder='Search watches, art, sneakers…'
-                name='search' 
+                name='search'
                 aria-label='Search auctions'
                 {...register('search', {
                   required: 'Please enter a product name to search.',

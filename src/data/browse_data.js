@@ -1,6 +1,6 @@
 export default [
     {
-        image: 'https://www.mallorca-zero.com/images/vintage-rolex-submariner-10000802-1792827263_edb72580-b1280x1024.jpeg',
+        image: 'https://www.watchclub.com/upload/watches/originali/watch-club-rolex-submariner-date-126613lb-latestmodel-ref-126613lb-year-2022-1698749461804-15544-5.jpg',
         title: 'Rolex Submariner Watch',
         category: "Watches",
         price: 400000,
@@ -65,7 +65,7 @@ export default [
         endtime: '03h : 21m : 38s'
     },
     {
-        image: 'https://www.vintage-portfolio.com/wp-content/uploads/a2299-omega-seam-hybrid-1.jpg',
+        image: 'https://brusselsvintagewatches.com/wp-content/uploads/2020/04/Omega-seamaster-2975-big-logo-4.jpg',
         title: 'Vintage Omega Seamaster',
         category: 'Watches',
         price: 16000,
@@ -89,7 +89,7 @@ export default [
         endtime: '1d 22h : 30m : 05s'
     },
     {
-        image: 'https://www.nathanalanjewelers.com/jewelry/images/z3000415-3000415.jpg',
+        image: 'https://i.etsystatic.com/34881464/r/il/c5228d/4893935590/il_1080xN.4893935590_oi3n.jpg',
         title: 'Diamond Pendant Necklace',
         category: "Jewelry",
         price: 180000,

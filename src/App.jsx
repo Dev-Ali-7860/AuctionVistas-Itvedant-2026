@@ -12,6 +12,7 @@ import Order from './pages/Order'
 import Profile from './pages/Profile'
 import How_its_works from './pages/How_its_works'
 import Browse_auctions from './components/Browse_auctions'
+import RolexWatch from './pages/RolexWatch'
 
 function App() {
 
@@ -30,8 +31,9 @@ function App() {
             <Route path='/How_its_works' element={<How_its_works />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
-          </Route>  
-        </Routes>      
+            <Route path='/RolexWatch' element={<RolexWatch />} />
+          </Route>
+        </Routes>
       </BrowserRouter>
     </>
   )

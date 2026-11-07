@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 const Browse_auction = ({
     image = '',
     title = 'Auction Item',
@@ -15,7 +17,7 @@ const Browse_auction = ({
                 <h4 className="card-title">Current Bid <br />₹ {price}</h4>
                 <p className="card-text">{bid}</p>
                 <p>Ends In {endtime}</p>
-                <button className="btn btn-success">Place Bid</button>
+                <NavLink to={'/RolexWatch'} className="btn btn-success">Place Bid</NavLink>
             </div>
         </div>
     )
