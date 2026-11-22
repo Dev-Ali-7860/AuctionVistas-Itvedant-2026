@@ -253,17 +253,18 @@
 .auction-btn {
   width: 100%;
   padding: 11px 16px;
-  border: none;
+  border: 1px solid #d6ad75;
   border-radius: 10px;
-  background: linear-gradient(135deg, #2d8b57, #1e6c43);
-  color: #fff;
+  background: linear-gradient(135deg, #e4bf8f, #c7904d);
+  color: #171511;
   font-weight: 700;
   cursor: pointer;
-  transition: opacity 0.2s ease;
+  transition: filter 0.2s ease, transform 0.2s ease;
 }
 
 .auction-btn:hover {
-  opacity: 0.95;
+  transform: translateY(-1px);
+  filter: brightness(1.05);
 }
 
 .browse-auctions-page {
@@ -3096,4 +3097,66 @@ html[data-theme="light"] #root {
   background: #e4bf8f;
   color: #171511;
   outline: none;
+}
+
+@media (max-width: 760px) {
+  .site-nav-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: stretch;
+    width: 100%;
+  }
+
+  .site-nav-links li,
+  .site-nav-links li:last-child a,
+  .theme-toggle {
+    width: 100%;
+  }
+
+  .site-nav-links li:last-child a {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+
+  .theme-toggle {
+    margin: 0;
+  }
+
+  .footer-section {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .footer-section h2 {
+    margin-left: 0;
+  }
+
+  .footer-brand-heading img {
+    width: 64px;
+    height: 64px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-nav-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-nav-links a,
+  .site-nav-links li:last-child a {
+    white-space: normal;
+  }
+
+  .footer-section {
+    padding-top: 20px;
+  }
+
+  .search-footer {
+    width: 100%;
+  }
+
+  .newsletter-form {
+    width: 100%;
+  }
 }
