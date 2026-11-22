@@ -3026,8 +3026,8 @@ body {
 body.dark,
 html[data-theme="dark"] body,
 html[data-theme="dark"] #root {
-  background: #000 !important;
-  color: #fff;
+  background: #242424 !important;
+  color: #f5f5f5;
 }
 
 .app.light,
@@ -3043,8 +3043,8 @@ html[data-theme="light"] #root {
 .app.dark main > section,
 .app.dark main > main {
   min-height: 100%;
-  background: #000 !important;
-  color: #fff;
+  background: #242424 !important;
+  color: #f5f5f5;
 }
 
 .app.light main,
@@ -3063,17 +3063,17 @@ html[data-theme="light"] #root {
 .app.dark .heading-contact,
 .app.dark .body-contact,
 .app.dark .map {
-  background: #000 !important;
-  color: #fff;
+  background: #242424 !important;
+  color: #f5f5f5;
 }
 
 .app.dark .auction-card,
 .app.dark .browse-auctions .category > div,
 .app.dark .body-contact .details,
 .app.dark .body-contact .form {
-  background: #111 !important;
-  border-color: rgba(228, 191, 143, 0.22);
-  color: #fff;
+  background: #303030 !important;
+  border-color: rgba(228, 191, 143, 0.28);
+  color: #f5f5f5;
 }
 
 .app.dark .Featured h3,
@@ -3087,21 +3087,74 @@ html[data-theme="light"] #root {
 .app.dark .body-contact p,
 .app.dark .body-contact .form h3,
 .app.dark .body-contact .form form > p:first-of-type {
-  color: #fff !important;
+  color: #f5f5f5 !important;
 }
 
 .app.dark .body-contact .form input,
 .app.dark .body-contact .form select,
 .app.dark .body-contact .form textarea {
-  background: #1a1a1a !important;
-  border-color: #555;
-  color: #fff;
+  background: #383838 !important;
+  border-color: #626262;
+  color: #f5f5f5;
 }
 
 .app.dark .body-contact .form input::placeholder,
 .app.dark .body-contact .form textarea::placeholder {
-  color: #bbb;
+  color: #bdbdbd;
   opacity: 1;
+}
+
+.app.dark .site-navbar,
+.app.dark .footer-section,
+.app.dark .home > section:last-child,
+.app.dark .auction-heading,
+.app.dark .header-about {
+  background-color: #242424 !important;
+  border-color: #4f4f4f;
+}
+
+.app.dark .footer-section,
+.app.dark .home > section:last-child .service,
+.app.dark .Form-page,
+.app.dark .auction-section,
+.app.dark .auction-modal {
+  background: #303030 !important;
+  border-color: #555555;
+  color: #f5f5f5;
+}
+
+.app.dark .home > section:last-child .service {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.app.dark .browse-grid > .card,
+.app.dark .browse-empty,
+.app.dark .browse-grid > .card .card-body,
+.app.dark .browse-auctions .category > div {
+  background: #303030 !important;
+  border-color: #555555;
+  color: #f5f5f5;
+}
+
+.app.dark .browse-grid > .card .card-title,
+.app.dark .browse-grid > .card .card-body > p,
+.app.dark .Form-page h3,
+.app.dark .Form-page > p,
+.app.dark .auction-section h2,
+.app.dark .auction-section label,
+.app.dark .auction-modal header h2,
+.app.dark .auction-preview-details h3,
+.app.dark .auction-preview-details p {
+  color: #f5f5f5 !important;
+}
+
+.app.dark .Form-page input,
+.app.dark .auction-section input,
+.app.dark .auction-section select,
+.app.dark .auction-section textarea {
+  background: #383838 !important;
+  border-color: #626262;
+  color: #f5f5f5;
 }
 
 .theme-toggle {
