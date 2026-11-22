@@ -176,11 +176,12 @@
 
 .featured-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
 }
 
 .auction-card {
+  min-width: 0;
   overflow: hidden;
   border: 1px solid rgba(139, 98, 47, 0.2);
   border-radius: 18px;
@@ -413,7 +414,7 @@
 
   .featured-grid,
   .browse-grid {
-    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -443,7 +444,7 @@
 
   .featured-grid,
   .browse-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .browse-grid>.card .card-img-top {
@@ -456,6 +457,31 @@
 }
 
 @media (max-width: 480px) {
+  .Featured {
+    padding: 32px 16px 40px;
+  }
+
+  .featured-grid {
+    gap: 16px;
+  }
+
+  .auction-card-image {
+    height: 200px;
+  }
+
+  .auction-card-body {
+    padding: 16px;
+  }
+
+  .auction-meta,
+  .auction-price-row {
+    align-items: flex-start;
+  }
+
+  .auction-meta {
+    flex-wrap: wrap;
+  }
+
   .brand-details {
     grid-template-columns: 1fr;
   }
@@ -780,6 +806,7 @@
   flex-direction: column;
   width: auto;
   max-width: none;
+  min-width: 0;
   padding: 0;
   overflow: hidden;
   border: 1px solid rgba(139, 98, 47, 0.2);
