@@ -17,7 +17,7 @@ const Browse_auctions = () => {
             <div className='browse-header'>
                 <div>
                     <p className='eyebrow'>Curated finds</p>
-                    <h2>{query ? `Search results for "${searchParams.get('q')}"` : 'Browse Auctions'}</h2>
+                    <h2 style={{color : '#805522'}}>{query ? `Search results for "${searchParams.get('q')}"` : 'Browse Auctions'}</h2>
                 </div>
                 <button type='button' className='filter-btn'>Filter</button>
             </div>

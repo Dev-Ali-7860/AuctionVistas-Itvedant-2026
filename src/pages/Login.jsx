@@ -17,7 +17,7 @@ const Login = () => {
   }
   return (
     <div className='Form-page'>
-      <h3>Welcome Back to AuctionVistas</h3>
+      <h3 style={{color : '#805522'}}>Welcome Back to AuctionVistas</h3>
       <p>Sign in to discover exclusive auctions and make your winning bid.</p>
       <form onSubmit={handleSubmit(formSubmit)}>
         <input type='email'

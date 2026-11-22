@@ -38,7 +38,7 @@ const Footer = () => {
               }
             })}
             name="email" aria-label="Email address" />
-            <br />{errors.email && <p>{errors.email.message}</p>}
+          <br />{errors.email && <p>{errors.email.message}</p>}
 
           <button type="button" onClick={handleSubmit(formSubmit)}>Subscribe</button>
         </div>

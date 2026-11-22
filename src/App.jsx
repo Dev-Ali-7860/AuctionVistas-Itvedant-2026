@@ -13,11 +13,16 @@ import Profile from './pages/Profile'
 import How_its_works from './pages/How_its_works'
 import Browse_auctions from './components/Browse_auctions'
 import RolexWatch from './pages/RolexWatch'
+import Terms from './pages/Terms'
+import Privacy from './pages/Privacy'
+import { useContext } from 'react'
+import { ThemeContext, ThemeProvider } from './components/ThemeContext'
 
-function App() {
+function AppCon() {
 
+  const { theme } = useContext(ThemeContext);
   return (
-    <>
+    <div className={`app ${theme}`}>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout />}>
@@ -29,14 +34,24 @@ function App() {
             <Route path='/order' element={<Order />} />
             <Route path='/profile' element={<Profile />} />
             <Route path='/How_its_works' element={<How_its_works />} />
+            <Route path='/terms' element={<Terms />} />
+            <Route path='/policy' element={<Privacy />} />
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
             <Route path='/RolexWatch' element={<RolexWatch />} />
           </Route>
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   )
+}
+
+function App() {
+  return (
+    <ThemeProvider>
+      <AppCon />
+    </ThemeProvider>
+  );
 }
 
 export default App
