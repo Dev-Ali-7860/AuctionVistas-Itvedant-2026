@@ -63,8 +63,8 @@ const Home = () => {
         </div>
 
         <div className='featured-grid'>
-          {featuredAuctions.map((item, index) => (
-            <div className='auction-card' key={`${item.title}-${index}`}>
+          {featuredAuctions.map((item) => (
+            <div className='auction-card' key={item.id}>
               <img className='auction-card-image' src={item.image} alt={item.title} />
               <div className='auction-card-body'>
                 <div className='auction-meta'>
